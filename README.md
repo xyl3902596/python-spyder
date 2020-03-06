@@ -1,7 +1,7 @@
 # 爬虫明星照片并检测人脸头像制作人脸数据集
 *****
 ## 环境：
-    python 3.5
+    python 3
     urlib3,requests package
 ## 运行
     python baidu_spyder.py
