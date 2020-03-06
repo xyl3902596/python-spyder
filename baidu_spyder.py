@@ -17,7 +17,7 @@ def downloadPicture(num,html, keyword):
             print('错误，当前图片无法下载')
             continue
         else:
-            string = os.path.join("pic",keyword,keyword + '_' + str(num) + '.jpg')
+            string = os.path.join("pic",keyword,keyword + '_' + str(num) + '.jpeg')
             fp = open(string, 'wb')
             fp.write(pic.content)
             fp.close()
@@ -51,7 +51,7 @@ def download_onepersion(word,id):
 
 if __name__=="__main__":
     with open("name.txt","r") as f:
-        name_list=[name.strip("\n") for name in f.readlines()]
+        name_list=[name.strip().strip("\n") for name in f.readlines()]
     if not os.path.exists("pic"):
         os.mkdir("pic")
     n=int(input("你想要搜索几位女明星的照片:"))
